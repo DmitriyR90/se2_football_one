@@ -24,6 +24,7 @@ body {
   font-family: 'Baloo Tamma';
   width: 100%;
   max-width: 1920px;
+
   height: auto;
   margin: 0 auto;
 }
@@ -54,7 +55,68 @@ a {
   position: relative;
 }
 
-.text-gradient {
+/* ------- LOGO icon ------- */
+.logo-icon {
+  position: absolute;
+}
+/* ------- BUTTONS part ------- */
+.link-button {
+  position: absolute;
+  width: clamp(70px, 10%, 180px);
+  display: flex;
+}
+
+.link {
+  cursor: pointer;
+  border-radius: 50px;
+  border-radius: clamp(30px, 5%, 69px);
+}
+
+.site-link {
+  font-size: 20%;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-position: unset;
+  color: #000;
+  padding: 0.45em 1em;
+
+  background: #17f642;
+  box-shadow: 0 0 0 0 hsla(43, 100%, 53%, 1);
+  transition: all 0.2s;
+
+  margin-bottom: 12%;
+}
+
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 18%;
+  font-weight: 400;
+  color: #fff;
+
+  transition: all 0.2s;
+
+  background: #814a94;
+  box-shadow: 0 0 0 0 hsla(43, 100%, 53%, 1);
+  padding: 0.38em 0.25em 0.25em 1em;
+}
+
+.whatsapp-logo {
+  width: 30%;
+}
+
+.site-link:hover,
+.site-link:focus,
+.whatsapp-link:hover,
+.whatsapp-link:focus {
+  scale: 1.02;
+  box-shadow: 0 0 0 1.5px hsla(43, 100%, 53%, 1);
+}
+/* ------- MAIN text part ------- */
+
+/* .text-gradient {
   text-transform: uppercase;
   background: linear-gradient(180deg, #ffff0a 0%, #ff6200 161.82%),
     linear-gradient(90deg, #ffffff 0%, #999999 100%);
@@ -71,88 +133,7 @@ a {
     transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   color: #070145;
-}
-
-/* ------- slots part* -------*/
-
-.slot-window {
-  position: absolute;
-  top: 220px;
-  left: 218px;
-
-  padding: 27px 79px;
-
-  width: 872px;
-  /* height: 706px; */
-  aspect-ratio: 1.235;
-  border: 5px solid red;
-
-  text-align: center;
-  /* gap: 15px; */
-}
-
-.slots-wrap {
-  display: flex;
-  justify-content: space-evenly;
-}
-.column {
-  border: 1px solid blue;
-
-  width: 230px;
-  height: 538.72px;
-
-  overflow: hidden;
-  position: relative;
-}
-
-.spinner {
-  position: absolute;
-  top: 0;
-}
-
-.slot-item {
-  width: 227.731px;
-  height: 168.323px;
-  /* aspect-ratio: 1.352; */
-
-  margin-bottom: 17.3px;
-
-  border-radius: 28.676px;
-  border: 1.5px solid #530044;
-  background: linear-gradient(175deg, #a941c3 0.07%, #3f0054 95.79%);
-  box-shadow: 1.1px 28.604px 36.085px 0px rgba(0, 0, 0, 0.12);
-  backdrop-filter: blur(12.211666107177734px);
-}
-.slot-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.slot-win {
-  background: linear-gradient(180deg, #ffff0a 0%, #ff6200 161.82%),
-    linear-gradient(175deg, #70ff8f 0.07%, #2ec500 95.79%);
-}
-
-.spin-btn {
-  cursor: pointer;
-  color: #070145;
-  text-align: center;
-  font-size: 60.311px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 85%; /* 51.264px */
-  text-transform: uppercase;
-
-  padding: 15px 172px 6px 172px;
-  border-radius: 672px;
-}
-
-.spin-btn:hover,
-.spin-btn:focus {
-  background: linear-gradient(34deg, rgba(255, 188, 17, 1) 36%, #9241b0 108%);
-}
+} */
 
 .rights {
   font-family: 'Montserrat';
@@ -166,61 +147,6 @@ a {
 
   top: 94%;
   left: 16%;
-}
-
-/* ------- modal window ------- */
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 285px;
-  left: 305px;
-
-  width: 706px;
-  height: 551px;
-
-  text-align: center;
-
-  border-radius: 72.041px;
-  border: 1.801px solid rgba(61, 27, 74, 0);
-  background: linear-gradient(177deg, #a941c3 -63.55%, #3f0054 97.23%),
-    linear-gradient(
-      0deg,
-      rgba(55, 8, 71, 0.92) 1.94%,
-      rgba(104, 20, 133, 0.92) 100%
-    );
-  backdrop-filter: blur(23.884483337402344px);
-
-  padding: 78px 110px 55px 110px;
-
-  text-transform: uppercase;
-  line-height: 0.9;
-}
-
-.modal.active {
-  display: block;
-}
-
-.modal-head {
-  font-size: 81.6px;
-  margin-bottom: 15px;
-}
-.modal-text {
-  font-size: 51.6px;
-}
-
-.modal-text__bonus {
-  font-size: 81.4px;
-  margin: 7px 0;
-}
-
-.modal-button {
-  display: block;
-  font-size: 45px;
-
-  margin-top: 30px;
-  padding: 42px 66px 30px 66px;
-  border-radius: 675.38px;
 }
 
 /* .first-paragraph {
@@ -326,32 +252,39 @@ a {
       font-size: 60px;
     }
   }
-  /* 
-  .main-text {
+
+  /* ------- LOGO icon ------- */
+  .logo-icon {
+    top: 1.7%;
+    left: 49.5%;
+    transform: translate(-50%);
+    width: 48.2%;
+  }
+
+  /* ------- BUTTONS part ------- */
+  .link-button {
     width: 100%;
-    left: 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+
     top: 10%;
+  }
+  .site-link {
+    font-size: 28%;
+    line-height: 2.3;
+    text-align: end;
+    margin-bottom: 0;
+  }
 
-    text-align: center;
-  } */
+  .whatsapp-link {
+    font-size: 25%;
+  }
 
-  /* .first-paragraph {
-    font-size: 71%;
-  } */
-
-  /* .second-paragraph {
-    margin-bottom: 2.2%;
-  } */
-
-  /* .odds {
-    font-size: 306%;
-  } */
-
-  /* .hero-button {
-    width: 89.5%;
-    margin: 0 auto;
-    font-size: 71.1%;
-  } */
+  .whatsapp-logo {
+    margin-left: 3%;
+    width: 28.9%;
+  }
 
   .rights {
     display: none;
@@ -437,6 +370,15 @@ a {
     html {
       font-size: 100px;
     }
+  }
+
+  /* ------- BUTTONS part ------- */
+  .link-button {
+    flex-direction: column;
+    justify-content: start;
+
+    left: 2.5%;
+    top: 5.5%;
   }
 
   .bg-img-mob {
