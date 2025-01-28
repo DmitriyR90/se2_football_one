@@ -110,31 +110,48 @@ a {
 .site-link:hover,
 .site-link:focus,
 .whatsapp-link:hover,
-.whatsapp-link:focus {
+.whatsapp-link:focus,
+.main-text__button:hover,
+.main-text__button:focus {
   scale: 1.02;
   box-shadow: 0 0 0 1.5px hsla(43, 100%, 53%, 1);
 }
 /* ------- MAIN text part ------- */
 
-/* .text-gradient {
-  text-transform: uppercase;
-  background: linear-gradient(180deg, #ffff0a 0%, #ff6200 161.82%),
-    linear-gradient(90deg, #ffffff 0%, #999999 100%);
+.main-text__block {
+  position: absolute;
 
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: 400;
+  line-height: 0.85;
+
+  text-transform: uppercase;
 }
-.btn-gradient {
-  background: linear-gradient(180deg, #ffff0a 0%, #ff6200 161.82%),
-    linear-gradient(90deg, #00ff31 0%, #00991e 100%);
+
+.top-text {
+  color: #00ff31;
+}
+
+.bottom-text {
+  color: #17f642;
+}
+
+.main-text__button {
+  display: inline-block;
+  cursor: pointer;
+  text-transform: none;
+
   overflow: hidden;
   transition: background 0.5s ease, color 0.3s ease, box-shadow 0.3s ease,
     transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  color: #070145;
-} */
+  color: inherit;
 
+  border-radius: 1796.679px;
+  background: linear-gradient(0deg, #bd00ff 0%, #bd00ff 100%),
+    linear-gradient(90deg, #d9d9d9 0%, #737373 100%);
+  transition: all 0.2s;
+}
 .rights {
   font-family: 'Montserrat';
   font-size: 12%;
@@ -148,43 +165,6 @@ a {
   top: 94%;
   left: 16%;
 }
-
-/* .first-paragraph {
-  font-size: 76%;
-  margin-bottom: 2%;
-} */
-
-/* .second-paragraph {
-  text-align: center;
-  font-size: 37.5%;
-  line-height: 1;
-  margin-top: 0;
-  margin-bottom: 0;
-} */
-/* .odds {
-  font-size: 323%;
-  margin-bottom: 5.6%;
-} */
-/* .hero-button {
-  display: block;
-  cursor: pointer;
-  border: none;
-
-  text-decoration: none;
-  font-size: 50%;
-  border-radius: 500px;
-  width: 64%;
-  margin: 0 auto;
-
-  padding: 7.2% 0% 6.2% 0%;
-} */
-
-/* .hero-button:hover,
-.hero-button:focus {
-  background: linear-gradient(34deg, rgba(255, 188, 17, 1) 36%, #9241b0 108%);
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-} */
 
 /* --- Mobile --- */
 
@@ -268,7 +248,7 @@ a {
     justify-content: center;
     gap: 5%;
 
-    top: 10%;
+    top: 9.5%;
   }
   .site-link {
     font-size: 28%;
@@ -284,6 +264,36 @@ a {
   .whatsapp-logo {
     margin-left: 3%;
     width: 28.9%;
+  }
+
+  /* --- MOB-MAIN Text part ---*/
+
+  .main-text__block {
+    width: 100%;
+
+    top: 17.8%;
+  }
+
+  .top-text {
+    font-size: 184.6%;
+    margin-bottom: -1.5%;
+  }
+
+  .middle-text {
+    font-size: 109.58%;
+    margin-bottom: 1.8%;
+  }
+
+  .bottom-text {
+    font-size: 48.22%;
+    margin-bottom: 5%;
+  }
+
+  .main-text__button {
+    width: 85.134%;
+    font-size: 67.375%;
+
+    padding: 5.3% 0 3.3% 0;
   }
 
   .rights {
@@ -372,6 +382,12 @@ a {
     }
   }
 
+  .logo-icon {
+    width: 23.07%;
+
+    top: 17.3%;
+    left: 14.1%;
+  }
   /* ------- BUTTONS part ------- */
   .link-button {
     flex-direction: column;
@@ -379,6 +395,35 @@ a {
 
     left: 2.5%;
     top: 5.5%;
+  }
+
+  .main-text__block {
+    width: 36.3%;
+
+    top: 35.37%;
+    left: 6.5%;
+  }
+
+  .top-text {
+    font-size: 180%;
+    margin-bottom: -1.5%;
+  }
+
+  .middle-text {
+    font-size: 106.835%;
+    margin-bottom: 1.8%;
+  }
+
+  .bottom-text {
+    font-size: 47%;
+    margin-bottom: 5%;
+  }
+
+  .main-text__button {
+    width: 84.2%;
+    font-size: 57.162%;
+
+    padding: 6% 0 5% 0;
   }
 
   .bg-img-mob {
