@@ -62,7 +62,7 @@ a {
 /* ------- BUTTONS part ------- */
 .link-button {
   position: absolute;
-  width: clamp(70px, 10%, 180px);
+  width: clamp(55px, 10%, 180px);
   display: flex;
 }
 
