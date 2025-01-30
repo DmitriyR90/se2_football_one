@@ -55,11 +55,12 @@ a {
   position: relative;
 }
 
-/* ------- LOGO icon ------- */
+/* ------- BUTTONS and LOGO part ------- */
+
 .logo-icon {
   position: absolute;
 }
-/* ------- BUTTONS part ------- */
+
 .link-button {
   position: absolute;
   width: clamp(55px, 10%, 180px);
@@ -68,8 +69,7 @@ a {
 
 .link {
   cursor: pointer;
-  border-radius: 50px;
-  border-radius: clamp(30px, 5%, 69px);
+  border-radius: clamp(30px, 7%, 69px);
 }
 
 .site-link {
@@ -90,7 +90,7 @@ a {
 .whatsapp-link {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   font-size: 18%;
   font-weight: 400;
@@ -98,13 +98,10 @@ a {
 
   transition: all 0.2s;
 
-  background: #814a94;
+  background: #381245;
   box-shadow: 0 0 0 0 hsla(43, 100%, 53%, 1);
-  padding: 0.38em 0.25em 0.25em 1em;
-}
 
-.whatsapp-logo {
-  width: 30%;
+  padding: 0.38em 0.55em 0.25em 1.2em;
 }
 
 .site-link:hover,
@@ -116,6 +113,61 @@ a {
   scale: 1.02;
   box-shadow: 0 0 0 1.5px hsla(43, 100%, 53%, 1);
 }
+
+@media screen and (max-width: 480px) {
+  .logo-icon {
+    top: 1.7%;
+    left: 49.5%;
+    transform: translate(-50%);
+    width: 48.2%;
+  }
+
+  .link-button {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+
+    top: 9.5%;
+  }
+  .site-link {
+    font-size: 28%;
+    line-height: 2.3;
+    text-align: end;
+    margin-bottom: 0;
+  }
+
+  .whatsapp-link {
+    font-size: 25%;
+  }
+
+  .whatsapp-logo {
+    margin-left: 3%;
+    width: 28.9%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .logo-icon {
+    width: 23.07%;
+
+    top: 17.3%;
+    left: 14.1%;
+  }
+
+  .link-button {
+    flex-direction: column;
+    justify-content: start;
+
+    left: 2.5%;
+    top: 5.5%;
+  }
+
+  .whatsapp-logo {
+    width: 29.335%;
+  }
+}
+
 /* ------- MAIN text part ------- */
 
 .main-text__block {
@@ -152,6 +204,67 @@ a {
     linear-gradient(90deg, #d9d9d9 0%, #737373 100%);
   transition: all 0.2s;
 }
+
+@media screen and (max-width: 480px) {
+  .main-text__block {
+    width: 100%;
+    top: 17.8%;
+  }
+
+  .top-text {
+    font-size: 184.6%;
+    margin-bottom: -1.5%;
+  }
+
+  .middle-text {
+    font-size: 109.58%;
+    margin-bottom: 1.8%;
+  }
+
+  .bottom-text {
+    font-size: 48.22%;
+    margin-bottom: 5%;
+  }
+
+  .main-text__button {
+    width: 85.134%;
+    font-size: 67.375%;
+
+    padding: 5.3% 0 3.3% 0;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .main-text__block {
+    width: 36.3%;
+
+    top: 35.37%;
+    left: 6.5%;
+  }
+
+  .top-text {
+    font-size: 180%;
+    margin-bottom: -1.5%;
+  }
+
+  .middle-text {
+    font-size: 106.835%;
+    margin-bottom: 1.8%;
+  }
+
+  .bottom-text {
+    font-size: 47%;
+    margin-bottom: 5%;
+  }
+
+  .main-text__button {
+    width: 84.2%;
+    font-size: 57.162%;
+
+    padding: 6% 0 5% 0;
+  }
+}
+
 .rights {
   font-family: 'Montserrat';
   font-size: 12%;
@@ -165,8 +278,6 @@ a {
   top: 94%;
   left: 16%;
 }
-
-/* --- Mobile --- */
 
 @media screen and (max-width: 480px) {
   html {
@@ -232,70 +343,6 @@ a {
       font-size: 60px;
     }
   }
-
-  /* ------- LOGO icon ------- */
-  .logo-icon {
-    top: 1.7%;
-    left: 49.5%;
-    transform: translate(-50%);
-    width: 48.2%;
-  }
-
-  /* ------- BUTTONS part ------- */
-  .link-button {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5%;
-
-    top: 9.5%;
-  }
-  .site-link {
-    font-size: 28%;
-    line-height: 2.3;
-    text-align: end;
-    margin-bottom: 0;
-  }
-
-  .whatsapp-link {
-    font-size: 25%;
-  }
-
-  .whatsapp-logo {
-    margin-left: 3%;
-    width: 28.9%;
-  }
-
-  /* --- MOB-MAIN Text part ---*/
-
-  .main-text__block {
-    width: 100%;
-
-    top: 17.8%;
-  }
-
-  .top-text {
-    font-size: 184.6%;
-    margin-bottom: -1.5%;
-  }
-
-  .middle-text {
-    font-size: 109.58%;
-    margin-bottom: 1.8%;
-  }
-
-  .bottom-text {
-    font-size: 48.22%;
-    margin-bottom: 5%;
-  }
-
-  .main-text__button {
-    width: 85.134%;
-    font-size: 67.375%;
-
-    padding: 5.3% 0 3.3% 0;
-  }
-
   .rights {
     display: none;
   }
@@ -308,8 +355,6 @@ a {
     width: 100%;
   }
 }
-
-/* --- Desctop and tablets --- */
 
 @media screen and (min-width: 481px) {
   html {
@@ -380,50 +425,6 @@ a {
     html {
       font-size: 100px;
     }
-  }
-
-  .logo-icon {
-    width: 23.07%;
-
-    top: 17.3%;
-    left: 14.1%;
-  }
-  /* ------- BUTTONS part ------- */
-  .link-button {
-    flex-direction: column;
-    justify-content: start;
-
-    left: 2.5%;
-    top: 5.5%;
-  }
-
-  .main-text__block {
-    width: 36.3%;
-
-    top: 35.37%;
-    left: 6.5%;
-  }
-
-  .top-text {
-    font-size: 180%;
-    margin-bottom: -1.5%;
-  }
-
-  .middle-text {
-    font-size: 106.835%;
-    margin-bottom: 1.8%;
-  }
-
-  .bottom-text {
-    font-size: 47%;
-    margin-bottom: 5%;
-  }
-
-  .main-text__button {
-    width: 84.2%;
-    font-size: 57.162%;
-
-    padding: 6% 0 5% 0;
   }
 
   .bg-img-mob {
